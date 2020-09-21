@@ -1,14 +1,16 @@
-import Nav from '../components/nav'
+import Head from 'next/head';
 
 export default function IndexPage() {
   return (
     <div>
-      <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">
-          Next.js + Tailwind CSS
-        </h1>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Next.js Mastery</title>
+      </Head>
+      <div className="min-h-screen flex justify-center items-center flex-col bg-gray-800 text-white">
+        <h1 className="text-3xl text-center">Next.js Mastery</h1>
+        <p className="mt-2">Learn next.js for free!</p>
       </div>
     </div>
-  )
-}
+    )
+  }
